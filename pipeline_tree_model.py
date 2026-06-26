@@ -38,7 +38,7 @@ def get_preprocessor():
     preprocessor = Pipeline(
         [
             ("feature_engineer", FunctionTransformer(add_feature)),
-            ("column_transfomer", ColumnTransformer([
+            ("column_transformer", ColumnTransformer([
                 ("passthrough", "passthrough", pass_through_cols),
                 ("encoder", encoder, cols_to_encode)
             ])),

@@ -26,7 +26,7 @@ def add_feature(X):
     return X
 
 
-def get_preproessor():
+def get_preprocessor():
     encoder = Pipeline(
         [
             (

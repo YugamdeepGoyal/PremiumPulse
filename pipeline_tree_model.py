@@ -7,6 +7,7 @@ cols_to_encode = ["sex", "smoker", "region"]
 
 
 def add_feature(X):
+    X = X.copy()
     X["smoker_bmi"] = (X["smoker"] == "yes").astype(int) * X["bmi"]
     X["smoker_obese"] = ((X["smoker"] == "yes") & (X["bmi"] >= 30)).astype(int)
     return X

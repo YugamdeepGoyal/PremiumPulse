@@ -120,7 +120,7 @@ These features model the real-world compounding effect of smoking and obesity on
 | Gradient Boosting | ~1611 | ~0.8595 |
 | SVM | ~1724 | ~0.8596 |
 | Decision Tree | ~1875 | ~0.8527 |
-| Random Forest | ~1977 | ~0.8621 |
+| Random Forest | ~1970 | ~0.8603 |
 | **Linear Regression** | **~2391** | **~0.8690** |
 | Ridge CV | ~2391 | ~0.8690 |
 | Elastic Net (GridSearchCV) | ~2391 | ~0.8690 |

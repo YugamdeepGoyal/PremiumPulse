@@ -28,18 +28,18 @@ Medical-Insurance-Prediction/
 ├── pipeline.py                      # Preprocessing pipeline for linear models
 ├── pipeline_tree_model.py           # Preprocessing pipeline for tree-based models
 │
-├── eda.ipynb                        # Exploratory Data Analysis
-├── linear_regression.ipynb          # Linear Regression model
-├── ridgecv.ipynb                    # Ridge Regression with cross-validation
-├── lasso_cv.ipynb                   # Lasso Regression with cross-validation
-├── elastic_net.ipynb                # Elastic Net Regression
-├── elastic_net_grid_searchcv.ipynb  # Elastic Net hyperparameter tuning
-├── svm.ipynb                        # Support Vector Regression
-├── decision_trees.ipynb             # Decision Tree Regressor
-├── random_forest.ipynb              # Random Forest Regressor
-├── adaboost.ipynb                   # AdaBoost Regressor
-├── gradient_boosting.ipynb          # Gradient Boosting Regressor
-├── xgboost.ipynb                    # XGBoost Regressor
+├── eda.ipynb
+├── linear_regression.ipynb
+├── ridgecv.ipynb
+├── lasso_cv.ipynb
+├── elastic_net.ipynb
+├── elastic_net_grid_searchcv.ipynb
+├── svm.ipynb   
+├── decision_trees.ipynb
+├── random_forest.ipynb
+├── adaboost.ipynb
+├── gradient_boosting.ipynb
+├── xgboost.ipynb
 │
 ├── models/
 │   ├── linear_regression_pipeline.pkl   # Trained Linear Regression pipeline

@@ -6,6 +6,8 @@ import kagglehub
 
 
 def get_dataset():
+    os.makedirs("images", exist_ok=True)
+    os.makedirs("models", exist_ok=True)
     path = kagglehub.dataset_download("mosapabdelghany/medical-insurance-cost-dataset")
     csv_path = os.path.join(path, "insurance.csv")
     df = pd.read_csv(csv_path)

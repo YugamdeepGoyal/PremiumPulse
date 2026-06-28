@@ -113,21 +113,19 @@ These features model the real-world compounding effect of smoking and obesity on
 
 ## Results
 
-| Model | Test R² | Test MAE |
-|------|---------:|---------:|
-| **Linear Regression** | **~0.8690** | **~2391** |
-| Ridge CV | ~0.8690 | ~2391 |
-| Elastic Net (GridSearchCV) | ~0.8690 | ~2391 |
-| Lasso CV | ~0.8689 | ~2400 |
-| Elastic Net CV | ~0.8679 | ~2486 |
-| **XGBoost** | **~0.8629** | **~1416** |
-| Random Forest | ~0.8621 | ~1977 |
-| SVM | ~0.8596 | ~1724 |
-| Gradient Boosting | ~0.8595 | ~1611 |
-| AdaBoost | ~0.8576 | ~2551 |
-| Decision Tree | ~0.8527 | ~1875 |
-
----
+| Model | Test MAE | Test R² |
+|-------------------------------|----------:|---------:|
+| **XGBoost** | **~1416** | **~0.8629** |
+| Gradient Boosting | ~1611 | ~0.8595 |
+| SVM | ~1724 | ~0.8596 |
+| Decision Tree | ~1875 | ~0.8527 |
+| Random Forest | ~1977 | ~0.8621 |
+| **Linear Regression** | **~2391** | **~0.8690** |
+| Ridge CV | ~2391 | ~0.8690 |
+| Elastic Net (GridSearchCV) | ~2391 | ~0.8690 |
+| Lasso CV | ~2400 | ~0.8689 |
+| Elastic Net CV | ~2486 | ~0.8679 |
+| AdaBoost | ~2551 | ~0.8576 |
 
 ## Key Insights
 
@@ -137,14 +135,15 @@ These features model the real-world compounding effect of smoking and obesity on
   - Non-smokers
   - Smokers with normal BMI
   - Smokers with high BMI
-- These groups explain the structured residual patterns observed across nearly every model.
 
+- These groups explain the structured residual patterns observed across nearly every model.
+> **Evaluation Metric:** Models were trained and tuned using cross-validation with `neg_mean_absolute_error` because target column is having outliers.
 ---
 
 ## Installation
 
 ```bash
-pip install numpy pandas matplotlib seaborn scikit-learn xgboost kagglehub
+pip install -r requirements.txt
 ```
 
 ---
@@ -187,5 +186,5 @@ The dataset will be downloaded automatically using **kagglehub**.
 ---
 
 ## License
-
+This project is licensed under the **MIT License**.
 This project is intended for educational and portfolio purposes.

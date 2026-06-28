@@ -56,6 +56,7 @@ Medical-Insurance-Prediction/
 
 - **Dataset:** Medical Insurance Cost Prediction Dataset
 - **Source:** Kaggle
+- **Dataset Link**: https://www.kaggle.com/datasets/mosapabdelghany/medical-insurance-cost-dataset
 - **Target Variable:** `charges`
 
 ### Features
@@ -139,6 +140,10 @@ These features model the real-world compounding effect of smoking and obesity on
 - These groups explain the structured residual patterns observed across nearly every model.
 > **Evaluation Metric:** Models were trained and tuned using cross-validation with `neg_mean_absolute_error` because target column is having outliers.
 ---
+
+## Feature Importance Graph of XGBoost
+![Feature Importance](images/xgboost_feature_importances.png)
+
 
 ## Installation
 

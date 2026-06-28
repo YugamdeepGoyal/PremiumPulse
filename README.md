@@ -144,6 +144,8 @@ These features model the real-world compounding effect of smoking and obesity on
 ## Feature Importance Graph of XGBoost
 ![Feature Importance](images/xgboost_feature_importances.png)
 
+# Setup
+You need Kaggle API and kagglehub to run this.
 
 ## Installation
 

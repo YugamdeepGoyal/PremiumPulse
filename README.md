@@ -85,6 +85,9 @@ Medical-Insurance-Prediction/
 - XGBoost Regressor
 
 ---
+## Scatterplot of charges vs bmi hue='smoker'
+![Scatterplot](images/scatterplot_bmi_charges_smoker.png)
+
 
 ## Feature Engineering
 
@@ -141,8 +144,9 @@ These features model the real-world compounding effect of smoking and obesity on
 > **Evaluation Metric:** Models were trained and tuned using cross-validation with `neg_mean_absolute_error` because target column is having outliers.
 ---
 
-## Feature Importance Graph of XGBoost
+## Feature Importance & Residuals (XGBoost)
 ![Feature Importance](images/xgboost_feature_importances.png)
+![Residuals](images/residual_plot_of_xgboost.png)
 
 # Setup
 You need Kaggle API and kagglehub to run this.
